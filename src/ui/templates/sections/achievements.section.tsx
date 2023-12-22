@@ -1,6 +1,6 @@
 import Body from "../../atoms/typographies/body.atom";
 import Heading from "../../atoms/typographies/heading.atom";
-import AccoladeList from "../../organisms/accoladeList.organism";
+import AccoladeAwards from "../../organisms/accoladeAwards.organism";
 import AchievementMetrincs from "../../organisms/achievementMetrics.organism";
 
 const AchievementSection = () => {
@@ -18,7 +18,7 @@ const AchievementSection = () => {
           <AchievementMetrincs className="grid grid-cols-2 gap-4 md:grid-cols-4 mb-8" />
         </div>
 
-        <AccoladeList />
+        <AccoladeAwards />
       </div>
     </div>
   );
