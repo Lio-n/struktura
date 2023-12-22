@@ -16,4 +16,4 @@ This is **not for commercial use**, it is for **personal use only**.
 
 ## Extra info
 
-- Font Family -> Helvetica : normal & bold.
+- Font Family -> Helvetica : 400-regular & 700-bold.
