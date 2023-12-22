@@ -12,7 +12,7 @@ const AchievementMetrincs = ({ className }: { className?: string }) => {
     <div className={className}>
       {metricsInfo.map((info, index) => (
         <div key={index} className="grid gap-2">
-          <Phrase textWeight="bold" className="text-2xl md:text-3xl lg:text-4xl">
+          <Phrase textWeight="bold" className="text-2xl md:text-3xl">
             {info.text}
           </Phrase>
           <Phrase>{info.content}</Phrase>
