@@ -1,3 +1,4 @@
+import ChevronIcon from "../../atoms/chevronIcon.atom";
 import Button from "../../atoms/buttons/default.atom";
 import Body from "../../atoms/typographies/body.atom";
 import Heading from "../../atoms/typographies/heading.atom";
@@ -17,9 +18,17 @@ const PortfolioSection = () => {
           </div>
         </div>
         <ProyectsList />
-        <Button intent="primary" className="mt-8 mx-auto block">
-          View all product
-        </Button>
+        <div className="mx-auto mt-8 flex justify-center">
+          <Button intent="primary" className="rounded-full">
+            <ChevronIcon />
+          </Button>
+          <Button intent="primary" className="mx-4 block">
+            View all product
+          </Button>
+          <Button intent="primary">
+            <ChevronIcon className="rotate-180" />
+          </Button>
+        </div>
       </div>
     </div>
   );
