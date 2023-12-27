@@ -1,7 +1,7 @@
 import { FC, HTMLAttributes } from "react";
 import { VariantProps, cva } from "class-variance-authority";
 
-const rootButton = cva(["border", "rounded-3xl", "transition-colors", "ease-in", "py-4 px-7", "leading-none", "whitespace-nowrap"], {
+const rootButton = cva(["border", "rounded-3xl", "transition-colors", "ease-in", "py-4 px-4", "leading-none", "whitespace-nowrap"], {
   variants: {
     intent: {
       dafault: ["bg-white", "text-black", "border-transparent", "hover:text-white hover:bg-black"],
@@ -25,8 +25,12 @@ const rootButton = cva(["border", "rounded-3xl", "transition-colors", "ease-in",
   },
 });
 
-interface BodyProps extends HTMLAttributes<HTMLButtonElement>, VariantProps<typeof rootButton> {}
+interface BodyProps extends HTMLAttributes<HTMLButtonElement>, VariantProps<typeof rootButton> {
+  disabled?: boolean;
+}
 
-const Button: FC<BodyProps> = ({ intent, size, weight, ...props }) => <button className={rootButton({ intent, size, weight })} {...props} />;
+const Button: FC<BodyProps> = ({ intent, size, weight, className, ...props }) => (
+  <button className={rootButton({ className, intent, size, weight })} {...props} />
+);
 
 export default Button;

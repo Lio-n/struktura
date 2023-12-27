@@ -10,7 +10,9 @@ const HeroContent = () => (
       className="mt-5 mb-7 md:mt-7 md:mb-14"
     />
 
-    <Button weight="bold">Learn more</Button>
+    <Button weight="bold" className="px-7">
+      Learn more
+    </Button>
   </div>
 );
 

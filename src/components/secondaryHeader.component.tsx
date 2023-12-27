@@ -1,7 +1,7 @@
 import BuildingIcon from "../ui/atoms/buildingIcon.atom";
 import EmailIcon from "../ui/atoms/emailIcon.atom";
 import PhoneIcon from "../ui/atoms/phoneIcon.atom";
-import SocialMediaList from "../ui/molecules/socialMediaList.molecule";
+import SocialMediaList from "../ui/organisms/socialMediaList.molecule";
 
 const SecondaryHeader = () => {
   const contactInfo = [
@@ -11,7 +11,7 @@ const SecondaryHeader = () => {
   ];
 
   return (
-    <div className={`w-full bg-[#f7f6f4] px-14 py-2 gap-8 hidden justify-between md:flex`}>
+    <div className={`w-full bg-[#f7f6f4] px-14 py-2 gap-8 hidden justify-between md:flex z-10`}>
       <ul className="flex gap-6">
         {contactInfo.map((info, index) => (
           <li key={index} className="flex gap-3 items-baseline">

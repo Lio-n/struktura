@@ -8,6 +8,8 @@ export default {
         body: "rgb(9, 31, 17)",
         "anti-flash-white": "#eaf3f5",
         isabelline: "#f2f4eb",
+        orange: "rgb(255, 117, 0)",
+        green: "rgb(116, 178, 77)",
       },
       backgroundImage: {
         "hero-mobile": "url(/hero_mobile.webp)",
@@ -21,7 +23,7 @@ export default {
   },
   safelist: [
     {
-      pattern: /(bg|text|border)-(vanilla-cream|anti-flash-white|isabelline)/,
+      pattern: /(bg|text|border)-(vanilla-cream|anti-flash-white|isabelline|orange|green)/,
     },
   ],
   plugins: [],
