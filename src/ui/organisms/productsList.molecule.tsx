@@ -41,7 +41,7 @@ const ProductsList: FC<ProductsListProps> = ({ ...props }) => {
   ];
 
   return (
-    <ul className={`grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 px-4`} {...props}>
+    <ul className={`grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 px-4 md:px-8`} {...props}>
       {productsInfo.map((info, index) => (
         <li key={index} className={`w-full ${index === productsInfo.length - 1 ? "lg:hidden xl:inline-block" : ""}`}>
           <ProductCard {...info} />
