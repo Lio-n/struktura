@@ -1,6 +1,6 @@
 import ProductInfo from "./product.interface";
 
-interface ProyectInfo extends Pick<ProductInfo, "bgImage" | "href" | "text"> {
+interface ProyectInfo extends Pick<ProductInfo, "img" | "href" | "text"> {
   description: string;
   location: string;
   duration: string;

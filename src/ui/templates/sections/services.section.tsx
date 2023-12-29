@@ -1,8 +1,30 @@
+import ServicesList from "../../../components/lists/servicesList.component";
+import ServiceInfo from "../../../interfaces/service.interface";
 import Body from "../../atoms/typographies/body.atom";
 import Heading from "../../atoms/typographies/heading.atom";
-import ServiceBlocks from "../../organisms/serviceBlocks.organism";
 
 const ServicesSection = () => {
+  const serviceInfo: ServiceInfo[] = [
+    {
+      img: "/services/design-and-planning.webp",
+      text: "Design and Planning Services",
+      content: "Our expert design and planning services ensure meticulous execution.",
+      href: "#",
+    },
+    {
+      img: "/services/construction-and-building.webp",
+      text: "Construction and Building",
+      content: "From groundbreaking to finishing touches, we bring your vision to life with precision.",
+      href: "#",
+    },
+    {
+      img: "/services/renovation-and-remodeling.webp",
+      text: "Renovation and Remodeling",
+      content: "Enhance existing spaces or rejuvenate structures with tailored solutions.",
+      href: "#",
+    },
+  ];
+
   return (
     <div className="bg-white py-12 md:py-20 lg:py-16 xl:py-20 w-screen">
       <div className="2xl:max-w-[90rem] 2xl:mx-auto">
@@ -16,7 +38,7 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        <ServiceBlocks />
+        <ServicesList services={serviceInfo} />
       </div>
     </div>
   );

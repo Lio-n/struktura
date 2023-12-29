@@ -2,17 +2,17 @@ import { FC, HTMLAttributes } from "react";
 import SubHeading from "../atoms/typographies/subHeading.atom";
 import ProductInfo, { ProductStatus } from "../../interfaces/product.interface";
 import Phrase from "../atoms/typographies/phrase.atom";
-import Button from "../atoms/buttons/default.atom";
+import Button from "../atoms/button.atom";
 import ShoppingCartIcon from "../atoms/shoppingCartIcon.atom";
 
 interface ProductCardProps extends HTMLAttributes<HTMLDivElement>, ProductInfo {}
 
-const ProductCard: FC<ProductCardProps> = ({ text, bgImage, price, href, merk, status, className = "" }: ProductCardProps) => {
+const ProductCard: FC<ProductCardProps> = ({ text, img, price, href, merk, status, className = "" }: ProductCardProps) => {
   const statusColor = `text-${status === ProductStatus.PreOrder ? "orange" : "green"}`;
 
   return (
     <div className="bg-white block rounded-2xl">
-      <img src={bgImage} alt={`image : ${bgImage.toString()}`} className="rounded-2xl object-cover h-52 w-full" />
+      <img src={img} alt={`image : ${img.toString()}`} className="rounded-2xl object-cover h-52 w-full" />
       <div className={`${className} p-4 grid gap-4`}>
         <div>
           <SubHeading textWeight="bold" className="mb-4">

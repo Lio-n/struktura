@@ -1,9 +1,24 @@
+import AccoladeAwards from "../../../components/lists/accoladeAwards.component";
+import AccoladeAwardInfo from "../../../interfaces/archivement.interface";
 import Body from "../../atoms/typographies/body.atom";
 import Heading from "../../atoms/typographies/heading.atom";
-import AccoladeAwards from "../../organisms/accoladeAwards.organism";
-import AchievementMetrincs from "../../organisms/achievementMetrics.organism";
+import MetricsList from "../../molecules/metricsList.molecule";
 
 const AchievementSection = () => {
+  const accolateAwards: AccoladeAwardInfo[] = [
+    { text: "Always building quality industrial" },
+    { text: "Best manufacturing service provider" },
+    { text: "Using the newest manufacturing tech" },
+    { text: "Experienced trusted contractor" },
+  ];
+
+  const metricsInfo = [
+    { text: "260+", content: "Proyects Completed" },
+    { text: "95%", content: "Satisfaction Rate" },
+    { text: "200+", content: "Satisfied Clients" },
+    { text: "100+", content: "Qualified Engineers" },
+  ];
+
   return (
     <div className="bg-[#eaf3f5] py-12 md:py-20 lg:py-16 xl:py-20 w-screen">
       <div className="2xl:max-w-[90rem] 2xl:mx-auto">
@@ -15,10 +30,10 @@ const AchievementSection = () => {
               construction. Our commitment to quality and innovation sets us apart
             </Body>
           </div>
-          <AchievementMetrincs className="grid grid-cols-2 gap-4 md:grid-cols-4 mb-8" />
+          <MetricsList metrics={metricsInfo} className="grid grid-cols-2 gap-4 md:grid-cols-4 mb-8" />
         </div>
 
-        <AccoladeAwards />
+        <AccoladeAwards awards={accolateAwards} />
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ export default {
         isabelline: "#f2f4eb",
         orange: "rgb(255, 117, 0)",
         green: "rgb(116, 178, 77)",
+        "light-beige": "rgb(247, 246, 244)",
       },
       backgroundImage: {
         "hero-mobile": "url(/hero_mobile.webp)",
@@ -23,7 +24,7 @@ export default {
   },
   safelist: [
     {
-      pattern: /(bg|text|border)-(vanilla-cream|anti-flash-white|isabelline|orange|green)/,
+      pattern: /(bg|text|border)-(vanilla-cream|anti-flash-white|isabelline|orange|green|light-beige)/,
     },
   ],
   plugins: [],

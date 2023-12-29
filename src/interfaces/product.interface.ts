@@ -4,7 +4,7 @@ enum ProductStatus {
 }
 
 interface ProductInfo {
-  bgImage: string;
+  img: string;
   href: string;
   text: string;
   price: string;

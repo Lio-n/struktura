@@ -1,20 +1,24 @@
-import { ReactNode } from "react";
+import { FC } from "react";
+import NavegationLink from "../atoms/navegationLink.atom";
 
-const listContent = ["Home", "About us", "Porfolio", "Services", "Our team", "Our story"];
+interface MenuLinkInfo {
+  text: string;
+  href: string;
+}
 
-const MenuList = ({ className, children }: { className?: string; children?: ReactNode }) => {
-  const LinkItem = ({ href, text }: { href: string; text: string }) => (
-    <a href={href} className="no-underline text-black transition font-normal hover:font-bold" children={text} />
-  );
+interface MenuListProps {
+  className?: string;
+  navLinks: MenuLinkInfo[];
+}
 
+const MenuList: FC<MenuListProps> = ({ navLinks, className }) => {
   return (
     <ul className={`gap-4 text-center w-[40rem] ${className}`}>
-      {listContent.map((item, index) => (
+      {navLinks.map((item, index) => (
         <li className="py-1" key={index}>
-          <LinkItem href={"#"} text={item} />
+          <NavegationLink href={item.href} text={item.text} />
         </li>
       ))}
-      {children}
     </ul>
   );
 };

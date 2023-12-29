@@ -1,8 +1,15 @@
+import AboutAwards from "../../../components/lists/aboutAwards.component";
+import AboutAwardInfo from "../../../interfaces/about.interface";
 import Body from "../../atoms/typographies/body.atom";
 import Heading from "../../atoms/typographies/heading.atom";
-import AboutAwards from "../../organisms/aboutAwards.organism";
 
 const AboutSection = () => {
+  const aboutAwards: AboutAwardInfo[] = [
+    { text: "Proven Track Record", content: "We have a decade of successful projects." },
+    { text: "Quality Assurance", content: "Meticulous attention to detail and craftsmanship." },
+    { text: "Client-Centric Approach", content: "Effective, transparent, and collaborative." },
+  ];
+
   return (
     <div className="bg-white py-12 md:py-20 lg:py-16 xl:py-20 w-screen">
       <div className="2xl:max-w-[90rem] 2xl:mx-auto">
@@ -16,7 +23,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <AboutAwards className="md:grid-cols-3" />
+        <AboutAwards className="md:grid-cols-3" awards={aboutAwards} />
       </div>
     </div>
   );

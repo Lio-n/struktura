@@ -1,25 +1,16 @@
 import { FC, HTMLAttributes } from "react";
 import SubHeading from "../atoms/typographies/subHeading.atom";
 import Phrase from "../atoms/typographies/phrase.atom";
-import Button from "../atoms/buttons/default.atom";
 import ProyectInfo from "../../interfaces/proyect.interface";
 import Body from "../atoms/typographies/body.atom";
+import Button from "../atoms/button.atom";
 
 interface ProyectCardProps extends HTMLAttributes<HTMLDivElement>, ProyectInfo {}
 
-const ProyectCard: FC<ProyectCardProps> = ({
-  text,
-  bgImage,
-  href,
-  description,
-  location,
-  duration,
-  total_budget,
-  className = "",
-}: ProyectCardProps) => {
+const ProyectCard: FC<ProyectCardProps> = ({ text, img, href, description, location, duration, total_budget, className = "" }: ProyectCardProps) => {
   return (
     <div className="bg-white block rounded-2xl">
-      <img src={bgImage} alt={`image : ${bgImage.toString()}`} className="rounded-2xl object-cover h-60 w-full" />
+      <img src={img} alt={`image : ${img.toString()}`} className="rounded-2xl object-cover h-60 w-full" />
       <div className={`${className} p-4 grid gap-4 md:gap-6 lg:px-2`}>
         <div>
           <SubHeading textWeight="bold">{text}</SubHeading>

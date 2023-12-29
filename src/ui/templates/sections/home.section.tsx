@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import PrimaryHeader from "../../../components/primaryHeader.component";
 import SecondaryHeader from "../../../components/secondaryHeader.component";
-import HeroContent from "../../molecules/heroContent.molecule";
+import Title from "../../atoms/typographies/title.atom";
+import Body from "../../atoms/typographies/body.atom";
+import Button from "../../atoms/button.atom";
 
 const HomeSection = () => {
   const [hideSecondaryHeader, setHideSecondaryHeader] = useState(false);
@@ -26,7 +28,17 @@ const HomeSection = () => {
       {!hideSecondaryHeader && <SecondaryHeader />}
       <PrimaryHeader />
       <div className="px-10 py-24 md:px-20 md:pb-40 lg:py-36">
-        <HeroContent />
+        <div className="xl:w-fit my-0 mx-auto">
+          <Title children="Building Your Vision with Precision" />
+          <Body
+            children="We are Struktura, your trusted partner in the world of construction. With a legacy of excellence and a commitment to quality, we turn your visions into reality"
+            className="mt-5 mb-7 md:mt-7 md:mb-14"
+          />
+
+          <Button weight="bold" className="px-7">
+            Learn more
+          </Button>
+        </div>
       </div>
     </div>
   );

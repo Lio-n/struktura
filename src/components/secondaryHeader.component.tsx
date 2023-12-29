@@ -1,13 +1,26 @@
 import BuildingIcon from "../ui/atoms/buildingIcon.atom";
 import EmailIcon from "../ui/atoms/emailIcon.atom";
+import FacebookIcon from "../ui/atoms/facebookIcon.atom";
+import InstagramIcon from "../ui/atoms/instagramIcon.atom";
+import LinkedinIcon from "../ui/atoms/linkedinIcon.atom";
 import PhoneIcon from "../ui/atoms/phoneIcon.atom";
-import SocialMediaList from "../ui/organisms/socialMediaList.molecule";
+import TwitterIcon from "../ui/atoms/twitterIcon.atom";
+import YoutubeIcon from "../ui/atoms/youtubeIcon.atom";
+import SocialMediaList from "../ui/organisms/socialMediaList.organism";
 
 const SecondaryHeader = () => {
   const contactInfo = [
     { icon: <EmailIcon />, text: "support@struktura.com" },
     { icon: <PhoneIcon />, text: "+1 0239 0310" },
     { icon: <BuildingIcon />, text: "Tegal, Indonesia" },
+  ];
+
+  const mediaInfo = [
+    { icon: <FacebookIcon className="w-4" />, href: "#" },
+    { icon: <TwitterIcon className="w-4" />, href: "#" },
+    { icon: <LinkedinIcon className="w-4" />, href: "#" },
+    { icon: <YoutubeIcon className="w-4" />, href: "#" },
+    { icon: <InstagramIcon className="w-4" />, href: "#" },
   ];
 
   return (
@@ -20,7 +33,7 @@ const SecondaryHeader = () => {
         ))}
       </ul>
 
-      <SocialMediaList />
+      <SocialMediaList media={mediaInfo} />
     </div>
   );
 };
