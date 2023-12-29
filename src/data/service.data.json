@@ -1,0 +1,26 @@
+{
+  "intro": {
+    "title": "Tailored Construction Solutions",
+    "description": "At Struktura, we offer a comprehensive suite of construction services, meticulously tailored to match your unique project requirements, ensuring success at every step."
+  },
+  "services": [
+    {
+      "img": "/services/design-and-planning.webp",
+      "text": "Design and Planning Services",
+      "content": "Our expert design and planning services ensure meticulous execution.",
+      "href": "#"
+    },
+    {
+      "img": "/services/construction-and-building.webp",
+      "text": "Construction and Building",
+      "content": "From groundbreaking to finishing touches, we bring your vision to life with precision.",
+      "href": "#"
+    },
+    {
+      "img": "/services/renovation-and-remodeling.webp",
+      "text": "Renovation and Remodeling",
+      "content": "Enhance existing spaces or rejuvenate structures with tailored solutions.",
+      "href": "#"
+    }
+  ]
+}

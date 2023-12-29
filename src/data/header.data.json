@@ -1,0 +1,10 @@
+{
+  "navLinks": [
+    { "text": "Home", "href": "/home" },
+    { "text": "About us", "href": "/about" },
+    { "text": "Portfolio", "href": "/portfolio" },
+    { "text": "Services", "href": "/services" },
+    { "text": "Our team", "href": "/team" },
+    { "text": "Our story", "href": "/story" }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "intro": {
+    "title": "Why Choose Struktura Construction",
+    "description": "At Struktura Construction, our commitment to excellence, unparalleled expertise, and unwavering dedication set us apart. Here's why you should choose us:"
+  },
+  "awards": [
+    { "text": "Proven Track Record", "content": "We have a decade of successful projects." },
+    { "text": "Quality Assurance", "content": "Meticulous attention to detail and craftsmanship." },
+    { "text": "Client-Centric Approach", "content": "Effective, transparent, and collaborative." }
+  ]
+}

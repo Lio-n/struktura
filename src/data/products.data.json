@@ -1,0 +1,46 @@
+{
+  "intro": {
+    "title": "Elevate Your Projects with Our Products",
+    "description": "Enhance your construction endeavors with our extensive range of high-quality construction materials and equipment, carefully curated to empower your projects' success."
+  },
+  "products": [
+    {
+      "img": "/products/steel_beams.webp",
+      "href": "#",
+      "text": "Steel Beams",
+      "price": "$500 - $2,500",
+      "merk": "StructuralPro",
+      "status": "Pre-order"
+    },
+    {
+      "img": "/products/concrete_blocks.webp",
+      "href": "#",
+      "text": "Concrete Blocks",
+      "price": "$500 - $2,500",
+      "merk": "SteelCraft",
+      "status": "Ready"
+    },
+    {
+      "img": "/products/concrete_remeshs.webp",
+      "href": "#",
+      "text": "Concrete Remeshs",
+      "price": "$500 - $2,500",
+      "merk": "SteelCraft",
+      "status": "Pre-order"
+    },
+    {
+      "img": "/products/timber_beams.webp",
+      "href": "#",
+      "text": "Timber Beams",
+      "price": "$500 - $2,500",
+      "merk": "TimberTech",
+      "status": "Ready"
+    }
+  ],
+  "tags": [
+    { "text": "Structural Materials" },
+    { "text": "Finishing Materials" },
+    { "text": "Machinery and Equipment" },
+    { "text": "Safety Gear and Apparel" }
+  ]
+}
