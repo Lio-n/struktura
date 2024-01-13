@@ -5,6 +5,7 @@ import ServicesSection from "../ui/templates/sections/services.section";
 import PortfolioSection from "../ui/templates/sections/portfolio.section";
 import ProductsSection from "../ui/templates/sections/products.section";
 import TestimonySection from "../ui/templates/sections/testimony.section";
+import CallToActionSection from "../ui/templates/sections/callToAction.section";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <ProductsSection />
       <PortfolioSection />
       <TestimonySection />
+      <CallToActionSection />
     </div>
   );
 };
