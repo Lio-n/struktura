@@ -1,7 +1,7 @@
 import { FC, HTMLAttributes } from "react";
 import { VariantProps, cva } from "class-variance-authority";
 
-const rootButton = cva(["border", "rounded-3xl", "transition-colors", "ease-in", "py-4 px-4", "leading-none", "whitespace-nowrap"], {
+const rootButton = cva(["border", "rounded-3xl", "transition-colors", "ease-in", "py-4 px-4", "leading-none", "whitespace-nowrap", "h-fit"], {
   variants: {
     intent: {
       dafault: ["bg-white", "text-black", "border-transparent", "hover:text-white hover:bg-black"],

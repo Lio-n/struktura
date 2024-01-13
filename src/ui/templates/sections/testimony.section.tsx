@@ -1,6 +1,6 @@
-import QuoteCard from "../../molecules/quoteCard.molecule";
 import SectionIntro from "../../molecules/sectionIntro.molecule";
 import TestimonyData from "../../../data/testimony.data.json";
+import Quote from "../../../components/quote.component";
 
 const TestimonySection = () => {
   return (
@@ -8,7 +8,7 @@ const TestimonySection = () => {
       <div className="2xl:max-w-[90rem] 2xl:mx-auto">
         <SectionIntro {...TestimonyData.intro} />
 
-        <QuoteCard quote={TestimonyData.qoute} />
+        <Quote testimonies={TestimonyData.testimonies} />
       </div>
     </div>
   );
