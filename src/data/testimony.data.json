@@ -3,8 +3,62 @@
     "title": "Client Voices of Satisfaction",
     "description": "Listen to delighted clients who've experienced Struktura's exceptional craftsmanship and professionalism."
   },
-  "qoute": {
-    "title": "They seamlessly modernized our office, showcasing their professionalism",
-    "description": "The team at Struktura transformed our outdated office space into a modern and efficient workspace. Their professionalism and ability to work around our schedule made the process seamless. Thank you!"
-  }
+  "testimonies": [
+    {
+      "quote": {
+        "title": "They seamlessly modernized our office, showcasing their professionalism",
+        "description": "The team at Struktura transformed our outdated office space into a modern and efficient workspace. Their professionalism and ability to work around our schedule made the process seamless. Thank you!"
+      },
+      "avatar": {
+        "small": "/testimonies/avatars/Karen_Williams_small.webp",
+        "big": "/testimonies/avatars/Karen_Williams_big.webp"
+      },
+      "attribution": {
+        "author": "Karen Williams",
+        "job_title": "Commercial Business Owner"
+      }
+    },
+    {
+      "quote": {
+        "title": "Their commitment to quality and attention to detail is unmatched",
+        "description": "I've had the pleasure of collaborating with Struktura on multiple projects, and I must say their commitment to quality and attention to detail is unmatched. Their team's expertise in construction has truly elevated the success of my developments."
+      },
+      "avatar": {
+        "small": "/testimonies/avatars/Medison_Johnson_small.webp",
+        "big": "/testimonies/avatars/Medison_Johnson_big.webp"
+      },
+      "attribution": {
+        "author": "Medison Johnson",
+        "job_title": "Homeowner"
+      }
+    },
+    {
+      "quote": {
+        "title": "Sets a new standard with its unwavering reliability and transparent operations",
+        "description": "Throughout my career as a real estate investor, I've worked with numerous construction companies, but Struktura stands out for their reliability and transparency. They consistently deliver quality work on time and within budget."
+      },
+      "avatar": {
+        "small": "/testimonies/avatars/David_Robinson_small.webp",
+        "big": "/testimonies/avatars/David_Robinson_big.webp"
+      },
+      "attribution": {
+        "author": "David Robinson",
+        "job_title": "Real Estate Investor"
+      }
+    },
+    {
+      "quote": {
+        "title": "Timely, on budget, and exceptional craftsmanship",
+        "description": "We entrusted Struktura with our home renovation, and we couldn't be happier with the results. They delivered on time, within budget, and the craftsmanship exceeded our expectations. Highly recommended!"
+      },
+      "avatar": {
+        "small": "/testimonies/avatars/Michael_Smith_small.webp",
+        "big": "/testimonies/avatars/Michael_Smith_big.webp"
+      },
+      "attribution": {
+        "author": "Michael Smith",
+        "job_title": "Homeowner"
+      }
+    }
+  ]
 }
