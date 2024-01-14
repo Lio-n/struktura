@@ -1,0 +1,50 @@
+{
+  "navegationSections": [
+    {
+      "name": "Home",
+      "href": "#homeSection"
+    },
+    {
+      "name": "About us",
+      "href": "#aboutSection"
+    },
+    {
+      "name": "Portfolio",
+      "href": "#porfolioSection"
+    },
+    {
+      "name": "Services",
+      "href": "#servicesSection"
+    },
+    {
+      "name": "Our team",
+      "href": "#"
+    },
+    {
+      "name": "Our story",
+      "href": "#"
+    }
+  ],
+  "navegationLegalesInfo": [
+    {
+      "name": "Jobs",
+      "href": "#"
+    },
+    {
+      "name": "Legal",
+      "href": "#"
+    },
+    {
+      "name": "Privacy",
+      "href": "#"
+    },
+    {
+      "name": "Partners",
+      "href": "#"
+    },
+    {
+      "name": "Term of Use",
+      "href": "#"
+    }
+  ]
+}

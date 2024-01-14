@@ -1,5 +1,7 @@
 import HomeSection from "../ui/templates/sections/home.section";
 import AchievementSection from "../ui/templates/sections/achievements.section";
+import PrimaryFooter from "../components/primaryFooter.component";
+import SecondaryFooter from "../components/secondaryFooter.component";
 import AboutSection from "../ui/templates/sections/about.section";
 import ServicesSection from "../ui/templates/sections/services.section";
 import PortfolioSection from "../ui/templates/sections/portfolio.section";
@@ -18,6 +20,8 @@ const HomePage = () => {
       <PortfolioSection />
       <TestimonySection />
       <CallToActionSection />
+      <PrimaryFooter />
+      <SecondaryFooter />
     </div>
   );
 };

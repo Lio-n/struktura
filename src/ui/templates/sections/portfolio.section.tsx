@@ -6,7 +6,7 @@ import PortolioData from "../../../data/portfolio.data.json";
 
 const PortfolioSection = () => {
   return (
-    <div className="bg-white py-12 md:py-20 lg:py-16 xl:py-20 xl:px-4 w-screen">
+    <div id="portfolioSection" className="bg-white py-12 md:py-20 lg:py-16 xl:py-20 xl:px-4 w-screen">
       <div className="2xl:max-w-[100rem] 2xl:mx-auto">
         <SectionIntro {...PortolioData.intro} />
 

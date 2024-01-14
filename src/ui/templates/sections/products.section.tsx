@@ -7,7 +7,7 @@ import ProductInfo from "../../../interfaces/product.interface";
 
 const ProductsSection = () => {
   return (
-    <div className="bg-isabelline py-12 md:py-20 lg:py-16 xl:py-20 w-screen">
+    <div id="productsSection" className="bg-isabelline py-12 md:py-20 lg:py-16 xl:py-20 w-screen">
       <div className="2xl:max-w-[90rem] 2xl:mx-auto">
         <SectionIntro {...ProductsData.intro} children={<TagsList tags={ProductsData.tags} />} />
 

@@ -9,19 +9,19 @@ import YoutubeIcon from "../ui/atoms/youtubeIcon.atom";
 import SocialMediaList from "../ui/organisms/socialMediaList.organism";
 import StruktureInfo from "../data/strukture.data.json";
 
+const mediaInfo = [
+  { icon: <FacebookIcon className="w-4" />, href: StruktureInfo.socialMedia.facebook },
+  { icon: <TwitterIcon className="w-4" />, href: StruktureInfo.socialMedia.twitter },
+  { icon: <LinkedinIcon className="w-4" />, href: StruktureInfo.socialMedia.linkedin },
+  { icon: <YoutubeIcon className="w-4" />, href: StruktureInfo.socialMedia.youtube },
+  { icon: <InstagramIcon className="w-4" />, href: StruktureInfo.socialMedia.instagram },
+];
+
 const SecondaryHeader = () => {
   const contactInfo = [
     { icon: <EmailIcon />, text: StruktureInfo.contact.email },
     { icon: <PhoneIcon />, text: StruktureInfo.contact.phone_n },
     { icon: <BuildingIcon />, text: StruktureInfo.contact.location },
-  ];
-
-  const mediaInfo = [
-    { icon: <FacebookIcon className="w-4" />, href: StruktureInfo.socialMedia.facebook },
-    { icon: <TwitterIcon className="w-4" />, href: StruktureInfo.socialMedia.twitter },
-    { icon: <LinkedinIcon className="w-4" />, href: StruktureInfo.socialMedia.linkedin },
-    { icon: <YoutubeIcon className="w-4" />, href: StruktureInfo.socialMedia.youtube },
-    { icon: <InstagramIcon className="w-4" />, href: StruktureInfo.socialMedia.instagram },
   ];
 
   return (
@@ -39,4 +39,5 @@ const SecondaryHeader = () => {
   );
 };
 
+export { mediaInfo };
 export default SecondaryHeader;

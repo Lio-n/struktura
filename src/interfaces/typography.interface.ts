@@ -4,6 +4,7 @@ type TextColor = {
 };
 
 type TextWeight = {
+  thin: string; // font-thin
   normal: string; // font-normal
   bold: string; // font-bold
 };
