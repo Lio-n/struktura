@@ -8,6 +8,8 @@ import TwitterIcon from "../ui/atoms/twitterIcon.atom";
 import YoutubeIcon from "../ui/atoms/youtubeIcon.atom";
 import SocialMediaList from "../ui/organisms/socialMediaList.organism";
 import StruktureInfo from "../data/strukture.data.json";
+import ScrollReveal from "../lib/scrollReveal.lib";
+import { useEffect } from "react";
 
 const mediaInfo = [
   { icon: <FacebookIcon className="w-4" />, href: StruktureInfo.socialMedia.facebook },
@@ -17,16 +19,21 @@ const mediaInfo = [
   { icon: <InstagramIcon className="w-4" />, href: StruktureInfo.socialMedia.instagram },
 ];
 
+const contactInfo = [
+  { icon: <EmailIcon />, text: StruktureInfo.contact.email },
+  { icon: <PhoneIcon />, text: StruktureInfo.contact.phone_n },
+  { icon: <BuildingIcon />, text: StruktureInfo.contact.location },
+];
+
 const SecondaryHeader = () => {
-  const contactInfo = [
-    { icon: <EmailIcon />, text: StruktureInfo.contact.email },
-    { icon: <PhoneIcon />, text: StruktureInfo.contact.phone_n },
-    { icon: <BuildingIcon />, text: StruktureInfo.contact.location },
-  ];
+  useEffect(() => {
+    ScrollReveal.reveal("#secondaryHeader_contact", { distance: "-200px", origin: "right" });
+    ScrollReveal.reveal("#secondaryHeader_socialMedia", { distance: "-200px", origin: "right" });
+  }, []);
 
   return (
     <div className={`w-full bg-[#f7f6f4] px-14 py-2 gap-8 hidden justify-between md:flex z-10`}>
-      <ul className="flex gap-6">
+      <ul className="flex gap-6" id="secondaryHeader_contact">
         {contactInfo.map((info, index) => (
           <li key={index} className="flex gap-3 items-baseline">
             {info.icon} {info.text}
@@ -34,7 +41,7 @@ const SecondaryHeader = () => {
         ))}
       </ul>
 
-      <SocialMediaList media={mediaInfo} />
+      <SocialMediaList media={mediaInfo} id="secondaryHeader_socialMedia" />
     </div>
   );
 };

@@ -6,9 +6,9 @@ interface ServicesListProps extends HTMLAttributes<HTMLUListElement> {
   services: ServiceInfo[];
 }
 
-const ServicesList: FC<ServicesListProps> = ({ services, className }) => {
+const ServicesList: FC<ServicesListProps> = ({ services, className, id }) => {
   return (
-    <div className={`grid gap-6 ${className} px-4 md:px-8 md:gap-8 2xl:px-0 xl:gap-4 xl:h-[25rem] xl:grid-cols-3`}>
+    <div id={id} className={`grid gap-6 ${className} px-4 md:px-8 md:gap-8 2xl:px-0 xl:gap-4 xl:h-[25rem] xl:grid-cols-3`}>
       {services.map((info, index) => (
         <ServiceCard key={index} {...info} />
       ))}

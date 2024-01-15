@@ -6,9 +6,9 @@ import NavegationLink from "../ui/atoms/navegationLink.atom";
 import PhoneIcon from "../ui/atoms/phoneIcon.atom";
 import Body from "../ui/atoms/typographies/body.atom";
 
-const FooterNavegation = () => {
+const FooterNavegation = ({ id }: { id?: string }) => {
   return (
-    <div className="pt-12 flex flex-col gap-8 md:gap-0 md:flex-row">
+    <div id={id} className="pt-12 flex flex-col gap-8 md:gap-0 md:flex-row">
       <NavegationSections />
       <NavegationLegalesInfo />
       <ContectInfo />

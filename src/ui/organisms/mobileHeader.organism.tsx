@@ -21,7 +21,7 @@ const MobileHeader = () => {
       </div>
 
       <div
-        className={`w-full transition-opacity duration-300 ease-in ${
+        className={`overflow-auto w-full transition-opacity duration-300 ease-in ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         } absolute w-full bg-white p-4`}>
         <MenuList className={MenuListMobileStyles} navLinks={HeaderData.navLinks} />

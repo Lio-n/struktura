@@ -13,7 +13,7 @@ interface QuoteProps extends HTMLAttributes<HTMLDivElement> {
   testimonies: TestimonyInfo[];
 }
 
-const Quote: FC<QuoteProps> = ({ testimonies }) => {
+const Quote: FC<QuoteProps> = ({ testimonies, id }) => {
   const [currTestimony, setTestimony] = useState<{ data: TestimonyInfo; index: number }>({ data: testimonies[0], index: 0 });
   const isMidDevice = useMediaQuery(MediaQueryInfo.max.md);
   const isLargeDevice = useMediaQuery(MediaQueryInfo.min.lg);
@@ -31,7 +31,7 @@ const Quote: FC<QuoteProps> = ({ testimonies }) => {
   const avatarImage = isMidDevice ? currTestimony.data.avatar.small : currTestimony.data.avatar.big;
 
   return (
-    <div className="px-4 md:px-8 lg:px-10 md:grid md:grid-cols-[minmax(0,_1fr)_minmax(0,_22rem)] md:gap-4">
+    <div id={id} className="px-4 md:px-8 lg:px-10 md:grid md:grid-cols-[minmax(0,_1fr)_minmax(0,_22rem)] md:gap-4">
       <div className="bg-light-beige rounded-2xl p-6 md:gap-4 md:p-8 lg:p-12 lg:flex lg:gap-8">
         <QuoteIcon className="w-[2rem] lg:scale-150" />
         <div className="lg:grid lg:grid-rows-[1fr]">
