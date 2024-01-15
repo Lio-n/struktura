@@ -12,10 +12,10 @@ const PaginationControls: FC<PaginationControlsProps> = ({ prev, next }) => {
 
   return (
     <div className="md:flex md:gap-4">
-      <Button intent="primary" className={sharedStyles.button} onClick={() => prev()}>
+      <Button aria-label="pagination quote left" intent="primary" className={sharedStyles.button} onClick={() => prev()}>
         <ChevronIcon />
       </Button>
-      <Button intent="primary" className={sharedStyles.button} onClick={() => next()}>
+      <Button aria-label="pagination quote right" intent="primary" className={sharedStyles.button} onClick={() => next()}>
         <ChevronIcon className="rotate-180" />
       </Button>
     </div>

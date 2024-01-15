@@ -33,7 +33,7 @@ const ProductCard: FC<ProductCardProps> = ({ text, img, price, href, merk, statu
               Buy Now
             </Button>
           </a>
-          <Button intent="primary">
+          <Button intent="primary" aria-label="shopping cart">
             <ShoppingCartIcon />
           </Button>
         </div>

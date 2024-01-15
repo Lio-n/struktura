@@ -19,13 +19,13 @@ const PortfolioSection = () => {
 
         <ProyectsList proyects={PortolioData.proyects} id="portfolioSection_proyects" />
         <div className="mx-auto mt-8 flex justify-center" id="portfolioSection_proyects">
-          <Button intent="primary" className="rounded-full">
+          <Button intent="primary" className="rounded-full" aria-label="pagination proyects left">
             <ChevronIcon />
           </Button>
           <Button intent="primary" className="mx-4 block">
             View all product
           </Button>
-          <Button intent="primary">
+          <Button intent="primary" aria-label="pagination proyects right">
             <ChevronIcon className="rotate-180" />
           </Button>
         </div>

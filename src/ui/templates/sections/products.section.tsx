@@ -11,6 +11,7 @@ const ProductsSection = () => {
   useEffect(() => {
     ScrollReveal.reveal("#productsSection_intro");
     ScrollReveal.reveal("#productsSection_services");
+    ScrollReveal.reveal("#productsSection_viewAll");
   }, []);
 
   return (
@@ -19,7 +20,7 @@ const ProductsSection = () => {
         <SectionIntro {...ProductsData.intro} children={<TagsList tags={ProductsData.tags} />} id="productsSection_intro" />
 
         <ProductsList products={ProductsData.products as ProductInfo[]} id="productsSection_services" />
-        <Button intent="primary" className="mt-8 mx-auto block" id="productsSection_services">
+        <Button intent="primary" className="mt-8 mx-auto block" id="productsSection_viewAll">
           View all product
         </Button>
       </div>

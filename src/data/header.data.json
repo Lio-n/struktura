@@ -1,11 +1,11 @@
 {
   "navLinks": [
-    { "text": "Home", "href": "/home" },
-    { "text": "About us", "href": "/about" },
-    { "text": "Portfolio", "href": "/portfolio" },
-    { "text": "Services", "href": "/services" },
-    { "text": "Our team", "href": "/team" },
-    { "text": "Our story", "href": "/story" }
+    { "text": "Home", "href": "/" },
+    { "text": "About us", "href": "/" },
+    { "text": "Portfolio", "href": "/" },
+    { "text": "Services", "href": "/" },
+    { "text": "Our team", "href": "/" },
+    { "text": "Our story", "href": "/" }
   ],
   "contact": {
     "phone_n": "+1 0239 0310",

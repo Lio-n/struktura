@@ -17,7 +17,9 @@ const MobileHeader = () => {
     <div className={`w-full ${isOpen ? "bg-white" : "bg-transparent"}`}>
       <div className="w-full flex justify-between my-0 mx-auto px-6 py-4 md:px-9">
         <Brand />
-        <button onClick={toggleMenu}>{isOpen ? <CrossIcon /> : <BurgerIcon />}</button>
+        <button aria-label="menu-mobile" onClick={toggleMenu}>
+          {isOpen ? <CrossIcon /> : <BurgerIcon />}
+        </button>
       </div>
 
       <div
