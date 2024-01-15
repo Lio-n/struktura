@@ -27,8 +27,8 @@ const HomeSection = () => {
 
   return (
     <div className="h-[40rem] w-screen bg-bottom bg-cover bg-hero-mobile md:bg-hero-table lg:bg-center xl:bg-hero-desktop">
-      <SecondaryHeader />
-      {!hideSecondaryHeader && <PrimaryHeader />}
+      {!hideSecondaryHeader && <SecondaryHeader />}
+      <PrimaryHeader />
       <div className="px-10 py-24 md:px-20 md:pb-40 lg:py-36">
         <div className="xl:w-fit my-0 mx-auto" id="homeSection_intro">
           <Title children="Building Your Vision with Precision" />
