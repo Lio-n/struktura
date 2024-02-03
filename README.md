@@ -1,4 +1,4 @@
-# Strukture Clone
+# Strukture Landing Page
 
 This is a website made by the user [somesquaredesign](https://dribbble.com/somesquaredesign), using his template of [Struktura - Construction Company Website](https://dribbble.com/shots/22770476--Live-Struktura-Construction-Company-Website-Responsive).
 
